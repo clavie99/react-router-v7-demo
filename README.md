@@ -30,23 +30,31 @@ cd react-router-v7-demo
 npm install
 
 # Start development server
-npm run dev
+edgeone pages dev
+
+# deploy the project
+edgeone pages deploy
 ```
 
 ## 🎯 Pages Overview
 
 ### Home (/)
+
 Displays project overview and entry points to various feature modules.
 
 ### SSR (/ssr)
+
 Demonstrates server-side rendering:
+
 - Re-renders on the server for each request
 - Real-time data fetching
 - SEO friendly
 - Suitable for dynamic content
 
 ### CSR (/csr)
+
 Demonstrates client-side rendering:
+
 - All rendering happens in the browser
 - Data fetching after JavaScript loads
 - Rich interactive experiences
@@ -54,28 +62,36 @@ Demonstrates client-side rendering:
 - Suitable for interactive applications
 
 ### Pre-render (/prerender)
+
 Demonstrates static site generation:
+
 - Pre-generates pages at build time
 - Fastest loading speed
 - CDN friendly
 - Suitable for static content
 
 ### Node Functions (/node-functions)
+
 Demonstrates Node.js server functions:
+
 - Full Node.js runtime
 - Complex backend logic
 - Database operations
 - API integrations
 
 ### Edge Functions (/edge-functions)
+
 Demonstrates edge functions:
+
 - Lightweight edge runtime
 - Global edge deployment
 - Ultra-low latency response
 - Geolocation services
 
 ### Client-Side Routing (/client-routing)
+
 Demonstrates client-side routing:
+
 - Navigation without page refresh
 - State persistence
 - Smooth user experience
@@ -128,18 +144,21 @@ app/
 This project replicates the functionality of Next.js hybrid rendering template, but implemented with React Router v7:
 
 ### Similarities
+
 - Supports SSR and SSG
 - Server function support
 - Modern development experience
 - TypeScript support
 
 ### Differences
+
 - **Routing System**: React Router v7 uses file-system routing + configuration file
 - **API Routes**: Implemented through loader/action functions
 - **Build Tool**: Based on Vite instead of Webpack
 - **Deployment**: More flexible deployment options
 
 ### React Router v7 Advantages
+
 - Cleaner API design
 - Better TypeScript support
 - Faster development server (Vite)

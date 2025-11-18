@@ -29,44 +29,58 @@ cd react-router-v7-demo
 npm install
 
 # 启动开发服务器
-npm run dev
+edgeone pages dev
+
+# 部署项目
+edgeone pages deploy
 ```
 
 ## 🎯 页面说明
 
 ### 首页 (/)
+
 展示项目概览和各个功能模块的入口。
 
 ### SSR (/ssr)
+
 演示服务器端渲染：
+
 - 每次请求都在服务器端重新渲染
 - 实时数据获取
 - SEO 友好
 - 适合动态内容
 
 ### Pre-render (/prerender)
+
 演示静态站点生成：
+
 - 构建时预生成页面
 - 最快的加载速度
 - CDN 友好
 - 适合静态内容
 
 ### Node Functions (/node-functions)
+
 演示 Node.js 服务器函数：
+
 - 完整的 Node.js 运行时
 - 复杂后端逻辑
 - 数据库操作
 - API 集成
 
 ### Edge Functions (/edge-functions)
+
 演示边缘函数：
+
 - 轻量级边缘运行时
 - 全球边缘部署
 - 超低延迟响应
 - 地理位置服务
 
 ### Client-Side Routing (/client-routing)
+
 演示客户端路由：
+
 - 无页面刷新导航
 - 状态持久化
 - 流畅的用户体验
@@ -118,18 +132,21 @@ app/
 这个项目复刻了 Next.js 混合渲染模板的功能，但使用 React Router v7 实现：
 
 ### 相同点
+
 - 支持 SSR、SSG
 - 服务器函数支持
 - 现代化的开发体验
 - TypeScript 支持
 
 ### 不同点
+
 - **路由系统**: React Router v7 使用文件系统路由 + 配置文件
 - **API 路由**: 通过 loader/action 函数实现
 - **构建工具**: 基于 Vite 而非 Webpack
 - **部署**: 更灵活的部署选项
 
 ### React Router v7 的优势
+
 - 更简洁的 API 设计
 - 更好的 TypeScript 支持
 - 更快的开发服务器 (Vite)

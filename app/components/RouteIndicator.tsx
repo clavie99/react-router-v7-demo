@@ -16,7 +16,7 @@ export default function RouteIndicator() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [pageLoadTime, setPageLoadTime] = useState<number | null>(null);
 
-  // 记录路由变化
+  // Track route changes
   useEffect(() => {
     const startTime = performance.now();
     
@@ -27,12 +27,12 @@ export default function RouteIndicator() {
         type: prev.length === 0 ? 'initial' as const : 'navigation' as const
       };
       
-      // 只保留最近 10 条记录
+      // Keep only the last 10 records
       const updated = [...prev, newEntry].slice(-10);
       return updated;
     });
 
-    // 测量页面加载时间
+    // Measure page load time
     requestAnimationFrame(() => {
       const endTime = performance.now();
       setPageLoadTime(endTime - startTime);
